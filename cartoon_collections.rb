@@ -22,11 +22,8 @@ def find_valid_calls(planeteer_calls)
   # Return the first valid call found, or return nil if no valid calls are found
   #planeteer_calls.select { |ele| valid_calls.include?(ele) }
   #planeteer_calls[0]
-  newarr = []
-  planeteer_calls.each do |ele|
-    if valid_calls.include?(ele)
-      newarr << ele
-    end
+  planeteer_calls.select do |ele|
+    valid_calls.include?(ele)
   end
-  newarr[0]
+  planeteer_calls[0]
 end
