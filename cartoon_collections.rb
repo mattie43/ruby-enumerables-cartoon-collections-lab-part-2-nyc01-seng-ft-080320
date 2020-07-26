@@ -28,5 +28,5 @@ def find_valid_calls(planeteer_calls)
       newarr << ele
     end
   end
-  nearr[0]
+  newarr[0]
 end
