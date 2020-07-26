@@ -22,7 +22,7 @@ def find_valid_calls(planeteer_calls)
   # Return the first valid call found, or return nil if no valid calls are found
   #planeteer_calls.select { |ele| valid_calls.include?(ele) }
   #planeteer_calls[0]
-  planeteer_calls.select do |ele|
+  planeteer_calls.find do |ele|
     valid_calls.include?(ele)
   end
   planeteer_calls[0]
